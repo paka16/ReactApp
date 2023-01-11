@@ -39,3 +39,6 @@ There are three total pages:
 * homepage - displays a table with your exercising record
 * create page - used to insert new entries
 * update page - used to update previously made entries
+
+# phtotos
+All photos used on this project were from a free images website - credentials in code
