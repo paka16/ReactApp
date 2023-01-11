@@ -1,0 +1,309 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+          /* Add fonts from the app's server 
+@font-face {                
+  font-family: 'FontName';
+  src: url('FontName.woff2') format('woff2');
+} 
+
+          */                           
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+          /* ...or hosted services like Google Fonts 
+@import url(//fonts.googleapis.com/css?family=Font+Name);
+          */
+
+          /* @import '../node_modules/modern-normalize/modern-normalize.css'; */
+          /* npm install modern-normalize 
+            Resets elements for browser consistancy.  
+            http://nicolasgallagher.com/about-normalize-css/ 
+          */
+
+          /* Component-specific stylesheets, if any 
+@import "component1.css";   
+          */
+
+/*   ----- Variables  -----  */
+:root {
+  --custom-text-color:#828E82;
+  --custom-accent-color:#3A606E;
+  --custom-accent-color-2:#607B7D;
+  --custom-background-color:#E0E0E0;
+  --custom-color:#AAAE8E;
+  --custom-font:font-family: 'Karla', sans-serif;
+ }
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  color:var(--custom-background-color);
+  background-color:var(--custom-background-color);
+  font-family:var(--custom-font);
+  font-size:20px;
+  margin: 10px;
+  padding:1%;
+  min-height:100vh;
+  line-height:1.15;
+
+  background-image: url(./components/photo/weights.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* ----- Anchors ----- Text links */
+/* a {}
+a:link {} */
+a:hover {
+  background-color:var(--custom-color);
+  font-family:var(--custom-font);
+  font-size:20px;
+  color:var(--custom-accent-color);
+  border-radius:5px;
+  margin:10px;
+  text-decoration:none;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+/* a:active {}
+a:visited {} */
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    background-color:var(--custom-accent-color);
+    color:var(--custom-background-color);
+    border:bold;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px;
+    padding:25px; /* controls the space between the header and nav. */
+    text-decoration:none;
+    vertical-align:baseline;
+    text-align:center;
+
+}
+nav a { 
+  background-color:var(--custom-accent-color);
+  color:var(--custom-background-color);
+  border:bold;
+  font-size:20px;
+  font-weight:bold;
+  margin:10px;
+  padding:25px; /* controls the space between the header and nav. */
+  text-decoration:none;
+  vertical-align:baseline;
+  text-align:center;}
+
+/*  ----- Page layout blocks -----  */
+header {
+    background-color:var(--custom-accent-color);
+    color:var(--custom-color);
+    border:2px dotted var(--custom-color);
+    font-size:1.2em;
+    font-weight:bold;
+    margin:10px;
+    padding:0.5%;
+    text-align: center;
+}
+main {
+    background-color:var(--custom-background-color);
+    color:var(--custom-text-color);
+    border: 2px solid var(--custom-accent-color);
+    font-size:1.5em;
+    font-weight:bold;
+    margin:10px;
+    padding:0.5%;
+    text-align:center;
+
+    
+
+}
+/* section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {} */
+/* div {} */
+/* aside {} */
+footer {
+    background-color:var(--custom-accent-color);
+    color:var(--custom-color);
+    border: 1px dotted var(--custom-color);
+    font-size:1.2em;
+    font-weight:bold;
+    margin:10px;
+    padding:0.5%;
+    text-align:center;
+}
+
+/*  -----  Typography  ----- */
+/* p {
+} */
+/* br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {} */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:var(--custom-font);
+} /* Define consistant font family.*/
+/* h1 {} */
+h2 {
+  border-bottom: 2px dotted var(--custom-color);
+  color:var(--custom-text-color);
+}
+/* h3 {}
+h4 {}
+h5 {}
+h6 {} */
+
+
+/* abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {} */
+
+/*  ----- Coding or instructional typography ----- */
+/* pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {} */
+
+/*  ----- Table ----- */
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--custom-accent-color);
+    text-align: center;
+    margin: 5px auto; 
+    /* gives more space between the borders of the main and the table. */
+}
+/* caption {}
+thead {} */
+tbody {
+  margin:0;
+  padding: 5px;
+}
+/* tfoot {} */
+tr { 
+    border:3px solid var(--custom-accent-color);
+    border-collapse: collapse;
+    padding:5px;
+    color:var(--custom-accent-color);
+}
+  /* tr:nth-child(even) {} */
+th {
+    border:3px solid var(--custom-accent-color);
+    padding:5px;
+    color:var(--custom-accent-color-2);
+}
+td {
+    border:2px dotted var(--custom-accent-color-2);
+    padding:5px 5px;
+    color:var(--custom-accent-color);
+}
+  /* td:nth-child(1) {} */
+/* colgroup {}
+data {}
+datalist {} */
+
+/*  ----- Form ----- */
+form {
+    /* should match the body */
+    padding:1%;
+    font:var(--custom-font);
+    margin:5%;
+
+}
+/* fieldset {} */
+  /* legend {} */
+label {
+    display: block;
+    margin:2%;
+}
+  button {
+    /* should match the body */
+    padding:5px;
+    font:var(--custom-font);
+    font-size:75%;
+    margin: 5%;
+  }
+  input {
+    /* should match the body */
+    padding:0.5%;
+    font:var(--custom-font);
+}
+  /* output {}
+  meter {}
+  progress {} */
+  select {
+    /* should match the body */
+    padding:0.5%;
+    font:var(--custom-font);
+  }
+    /* optgroup {}
+    option {}
+  textarea {} */
+
+/* ----- Media ----- */
+/* figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {} */
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+/* .floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {} */
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
