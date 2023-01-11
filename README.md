@@ -37,5 +37,5 @@ Then the app should be running.
 # pages
 There are three total pages:
 * homepage - displays a table with your exercising record
-* insert page - used to insert new entries
+* create page - used to insert new entries
 * update page - used to update previously made entries
