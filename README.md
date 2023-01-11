@@ -18,9 +18,17 @@ npm install
 ```
 in each respective directories to make sure you have installed both files. 
 
-2. Create a .env file in the frontend folder, and specify the port number PORT=8000.
-3. Create a .env file in the backend folder, specify the port number PORT=3000, as well as the Mongo Connection String.
-4. Start the project in the backend folder with NPM
+2. Check to see if the frontend has a .env file with:
+```python
+PORT=8000
+```
+and that the backend has a .env file with a connection to Mongo:
+```python
+PORT=3000
+```
+if not, create one. 
+
+3. Start the project in the backend folder with NPM
 ```python
 npm start
 ```
