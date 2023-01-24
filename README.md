@@ -1,5 +1,7 @@
 # ReactApp
-Made with REACT to create a full-stack MERN application to record and keep track of your exercise.
+A single page application created with a MERN stack.
+The front-end uses React, Node, and global design features implemented with HTML/CSS. 
+The back-end uses MongoDB, Mongoose, Express, REST, and Node. 
 
 # overview
 A simple exercise tracker created using:
@@ -18,17 +20,7 @@ npm install
 ```
 in each respective directories to make sure you have installed both files. 
 
-2. Check to see if the frontend has a .env file with:
-```python
-PORT=8000
-```
-and that the backend has a .env file with a connection to Mongo:
-```python
-PORT=3000
-```
-if not, create one. 
-
-3. Start the project in the backend folder with NPM
+2. Start the project in the backend folder with NPM
 ```python
 npm start
 ```
